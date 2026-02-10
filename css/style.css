@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "ResumeFont", Arial, sans-serif;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 16px;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cccccc;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 16px;
+  background-color: #eeeeee;
+  border-top: 1px solid #cccccc;
+}
+
+/*********** Splash Page ************************/
+header {
+  padding: 18px 16px;
+  background-color: #fafafa;
+}
+
+header h1 {
+  font-family: "ResumeFont", Arial, sans-serif;
+  color: #222222;
+  margin: 10px 0;
+}
+
+header img {
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+.address {
+  color: #444444;
+  margin: 6px 0;
+}
+
+.tagline {
+  color: #666666;
+  margin: 6px 0 0 0;
+}
+
+/************* Sections ********************/
+hr {
+  border: 0;
+  border-top: 1px solid #dddddd;
+  margin: 16px;
+}
+
+section h3 {
+  font-family: "ResumeFont", Arial, sans-serif;
+  color: #222222;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 14px;
+  margin: 0;
+}
+
+section ul {
+  padding-left: 18px;
+}
+
+section a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #003377;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 8px 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 520px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaaaaa;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaaaaa;
+}
